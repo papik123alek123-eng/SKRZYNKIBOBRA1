@@ -1,0 +1,26 @@
+name: Skrzynki
+version: 1.0
+main: pl.skrzynki.Skrzynki
+api-version: "1.21"
+description: Skrzynki z dropem i animacja otwierania
+commands:
+  skrzynkastworz:
+    description: Tworzy nowa skrzynke
+    usage: /skrzynkastworz <nazwa>
+    permission: skrzynki.admin
+  skrzynkaedytuj:
+    description: Edytuje drop skrzynki
+    usage: /skrzynkaedytuj <nazwa>
+    permission: skrzynki.admin
+  skrzynkadaj:
+    description: Daje skrzynke graczowi
+    usage: /skrzynkadaj <gracz> <nazwa> [ilosc]
+    permission: skrzynki.admin
+  skrzynkausun:
+    description: Usuwa skrzynke
+    usage: /skrzynkausun <nazwa>
+    permission: skrzynki.admin
+permissions:
+  skrzynki.admin:
+    description: Zarzadzanie skrzynkami
+    default: op
